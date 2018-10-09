@@ -17,21 +17,33 @@
                     <img src="<?php echo get_stylesheet_directory_uri()?>/Assets/img/viral.png" alt="logo Viral">
                 </figure>
             </section>
+
+            <?php wp_nav_menu(array(
+                'theme_location' => 'header-menu',
+                'container' => 'section',
+                'container_class' => 'col-12 header_nav d-flex justify-content-center',
+                'container_id' => '',
+                'items_wrap' => '<ul class="nav">%3$s</ul>',
+                'menu_class' => '', 
+            ));             ?>
+
+
+
             <section class ="col-12 header_nav d-flex justify-content-center">
                     <ul class="nav">
-                        <li class="nav-item ">
+                        <li class="nav-item nav__item">
                             <a class="nav-link text-dark" href="#">Tecnologia</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav__item">
                             <a class="nav-link text-dark" href="#">Youtube</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav__item">
                             <a class="nav-link text-dark" href="#">Musica</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav__item">
                             <a class="nav-link text-dark" href="#">Cine</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav__item">
                             <a class="nav-link text-dark" href="#">Series</a>
                         </li>
                     </ul>
@@ -73,4 +85,4 @@
         </section>
     </header>
 
-    <section class = "main row col-12">
+    <section class = "main row">
